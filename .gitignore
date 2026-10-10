@@ -1,0 +1,56 @@
+# Build output
+/build/
+/out/
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.obj
+*.o
+
+# Recompiler output derived from copyrighted input — never commit
+/generated/
+*.xbe
+*.iso
+*.xiso
+
+# User-provided game assets — never commit
+/assets/
+/roms/
+
+# Local game input (default.xbe + disc data). Never commit.
+/game/
+
+# Pipeline logs (M1+)
+/logs/
+
+# Runtime artifacts written by the recompiled EXE into its working directory
+xbox_kernel.log
+icall_targets.dump
+*.dump
+
+# IDE / OS
+.vs/
+.vscode/
+.idea/
+*.user
+Thumbs.db
+desktop.ini
+
+# Python (asset tooling)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Fetched third-party toolchains + M0 scratch/build output — do not commit.
+# (xboxrecomp clone, compiler shims, synthesized import libs, generated code,
+#  build trees, test fixtures.) Decide vendored-vs-submodule later.
+/third_party/
+
+# Static archives / build trees
+*.a
+/build*/
+
+# Windows stray device-name artifact
+nul
